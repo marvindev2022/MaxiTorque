@@ -1,0 +1,57 @@
+.container-services {
+  display: flex;
+  gap: 50px;
+  padding: 10px 200px 0 200px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 10px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 25px;
+  overflow: hidden;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 30px 0px rgba(4, 0, 0, 0.952);
+  -webkit-box-shadow: 0px 5px 30px 0px rgba(147, 7, 7, 0.88);
+}
+
+.card img {
+  width: 93px;
+  height: 150px;
+}
+.card h3 {
+  
+    color: #c00113;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0.7px;
+    font-family: 'Anton', sans-serif;
+
+}
+.card p {
+    
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
