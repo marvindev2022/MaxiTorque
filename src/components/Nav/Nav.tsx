@@ -20,8 +20,8 @@ function Nav(): JSX.Element {
           </a>
         </li>
         <li className="nav-item">
-          <a href="#agende" className="nav-link">
-            Agende
+          <a href="#gallery" className="nav-link">
+            Galeria
           </a>
         </li>
         <li className="nav-item">

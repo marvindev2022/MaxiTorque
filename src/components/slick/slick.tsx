@@ -25,11 +25,15 @@ const Carrossel: React.FC = (): JSX.Element => {
   };
 
   return (
-    <Slider {...settings}>
-      {images.map((image) => (
-        <img src={image} alt="" />
-      ))}
-    </Slider>
+    <React.Fragment>
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img style={{ width: "100vw", height: "100vh" }} src={image} alt="" />
+          </div>
+        ))}
+      </Slider>
+    </React.Fragment>
   );
 };
 

@@ -1,8 +1,13 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   overflow: hidden;
+  font-family: 'Inter', sans-serif;
+
 }
 body {
   background-color: rgb(13, 13, 13);
@@ -14,8 +19,7 @@ main {
   background-repeat: no-repeat;
 }
 section {
-  height: 894px;
-  border:2px solid red
+  width: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -32,4 +36,8 @@ main::-webkit-scrollbar {
 
 main::-webkit-scrollbar-thumb {
   background-color: transparent;
+}
+
+.about-us {
+  height: 1020px;
 }

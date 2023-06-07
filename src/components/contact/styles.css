@@ -1,17 +1,61 @@
-.container-contact{
+.container-contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:   column;
+  flex-direction: column;
+  min-width: 1220px;
   background: white;
+  gap: 50px;
+  padding: 50px;
+}
+.section-data-contact {
+  width: 100%;
+  gap: 50px;
+  padding: 20px;
+  font-size: 16px;
+  justify-content: space-between;
 }
 .img-contact {
-  width: 40px;
-  height: 40px;
+  max-width: 42px;
+  height: 42px;
   object-fit: fill;
 }
-.h2{
+.h2 {
   color: #a70000;
   font-size: 22px;
   font-weight: 800;
+}
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  gap: 50px;
+}
+
+.container-input {
+  display: flex;
+  gap: 20px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  height: 55px;
+  border-radius: 10%
+}
+.input-500px {
+  width: 500px;
+}
+
+.input-1030px {
+  width: 1030px;
+}
+textarea {
+  width: 1030px;
+  height: 120px;
+  resize: none;
+  border-radius: 10%
 }
