@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 ul {
   display: flex;
   gap: 20px;
@@ -8,10 +10,6 @@ ul {
   text-decoration: none;
   color: inherit;
 }
-
-
-
-/* ...seu código CSS existente... */
 
 .menu-toggle {
   display: none;
@@ -39,7 +37,6 @@ ul {
   display: block;
 }
 
-
 a {
   color: #ffffff;
   text-transform: capitalize;
@@ -50,11 +47,26 @@ a {
   padding-left: 15px;
   font-family: "Anton", sans-serif;
 }
+.home {
+  color: #c00113;
+  transition: background-color 0.5s ease;
+}
+a{
+  letter-spacing: 1.5px;
+
+}
 a:hover {
-  color: rgb(255, 0, 0);
+   box-shadow: 0px 5px 30px 0px rgba(4, 0, 0, 0.952);
+  -webkit-box-shadow: 0px 5px 30px 0px #c00113;
+}
+.contact {
+  background: #c00113;
+    border-radius: 2px;
+    padding-right: 15px !important;
+    color: #fff !important;
+
 }
 @media (max-width: 768px) {
-  
   .nav-links li {
     display: none;
   }

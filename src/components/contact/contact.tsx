@@ -34,9 +34,9 @@ function Contact() {
     }));
   }
   return (
-    <div className="container-contact">
+    <section className="container-contact">
       <h1>Entre em contato </h1>
-      <h2>Nosso contatpo</h2>
+      <h2>Nosso contato</h2>
       <div className="section-data-contact" style={{ display: "flex" }}>
         <div style={{ display: "flex" }} className="container-span-contact">
           <img className="img-contact" src={localization} alt="localização" />
@@ -46,14 +46,14 @@ function Contact() {
           </span>
         </div>
         <div style={{ display: "flex" }} className="container-span-contact">
-          <img className="img-contact" src={call} alt="localização" />
+          <img className="img-contact" src={call} alt="ltelefone" />
           <span>
             <h2 className="h2">Nosso Contato</h2>
             <p>(21) 9 7935-1107</p>
           </span>
         </div>
         <div style={{ display: "flex" }} className="container-span-contact">
-          <img className="img-contact" src={mail} alt="localização" />
+          <img className="img-contact img-email" src={mail} alt="email" />
           <span>
             <h2 className="h2">Nosso E-mail</h2>
             <p>maxitorque1@gmail.com</p>
@@ -108,7 +108,7 @@ function Contact() {
           <button type="submit">Enviar</button>
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 

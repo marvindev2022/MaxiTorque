@@ -24,8 +24,8 @@ function Nav(): JSX.Element {
             Galeria
           </a>
         </li>
-        <li className="nav-item">
-          <a href="#contact" className="nav-link">
+        <li className="nav-item ">
+          <a href="#contact" className="nav-link contact">
             Contato
           </a>
         </li>

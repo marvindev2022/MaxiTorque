@@ -1,15 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Great+Vibes&family=Pacifico&family=Alex+Brush&family=Dancing+Script&display=swap");
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 30px;
-  width: 100% ;
-  height: 100px;
-  position: absolute;
-  z-index: 99999;
-  background: black;
+  width: 100%;
+  height: 200px;
+  position: fixed;
+  z-index: 999;
+background-color: #000000ec;}
+  
+.logo {
+  color: white;
+  font-weight: 700;
+  font-style: oblique;
 }
-header img {
-  width: 120px;
-  object-fit: fill;
+header strong {
+  position: relative;
+  font-size: 52px;
+  color: white;
+  font-style: oblique;
 }
+
+b {
+  position: relative;
+  left: -34px;
+  color: red;
+  font-style: oblique;
+}
+.b {
+  color: white;
+}
+
+.logo {
+  text-transform: capitalize;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 0;
+  padding-left: 15px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* Exemplo de uso das fontes na sua logo */

@@ -7,7 +7,6 @@
   background: white;
   gap: 50px;
   padding: 50px;
-  text-align: center;
   margin-top: 50px;
 }
 .section-data-contact {
@@ -21,6 +20,11 @@
   max-width: 42px;
   height: 42px;
   object-fit: fill;
+  margin-right: 20px;
+}
+.img-email {
+  width: 32px;
+  height: 32px;
 }
 .h2 {
   color: #a70000;
@@ -38,7 +42,7 @@
 
 .container-input {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 label {
   display: flex;
@@ -46,10 +50,11 @@ label {
 }
 input {
   height: 55px;
-  border-radius: 10%
+  border-radius: 1%;
+  padding-left: 20px;
 }
 .input-500px {
-  width: 500px;
+  width: 501px;
 }
 
 .input-1030px {
@@ -59,5 +64,5 @@ textarea {
   width: 1030px;
   height: 120px;
   resize: none;
-  border-radius: 10%
+  border-radius: 1%;
 }

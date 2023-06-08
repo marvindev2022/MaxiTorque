@@ -9,7 +9,7 @@ import "./styles.css";
 
 function Services() {
   return (
-    <div className="container-services">
+    <section className="container-services">
       <h1 className="title"> Nós oferecemos os melhores serviços de reparo. </h1>
       <h4>Nossos serviços</h4>
       <div className="container-cards">
@@ -67,7 +67,7 @@ function Services() {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

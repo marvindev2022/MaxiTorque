@@ -12,17 +12,8 @@
 body {
   background-color: rgb(13, 13, 13);
 }
-main {
-  background-image: url(./assets/kisspng-van-fiat-ducato-fiat-automobiles-fiat-strada-2017-fiat-500-abarth-5b1c02751300f1.4264419515285622930779.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section {
-  width: 100%;
-}
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 0.5em;
   background-color: transparent;
 }
@@ -36,8 +27,18 @@ main::-webkit-scrollbar {
 
 main::-webkit-scrollbar-thumb {
   background-color: transparent;
+} */
+
+section {
+  max-width: 1990px;
+  max-height: 1080px;
+  width: 100vw;
+  height: 100vh;
+}
+header{
+  min-height: 150px;
+}
+a {
+  text-decoration: none;
 }
 
-.about-us {
-  height: 1020px;
-}

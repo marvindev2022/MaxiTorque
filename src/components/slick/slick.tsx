@@ -1,39 +1,33 @@
-import React from "react";
-import Slider, { Settings } from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
+import React, { useEffect, useState } from "react";
 import image1 from "./../../assets/car-repair-1920-x-1080-wallpaper-yvtenz6h0chtr00l.webp";
 import image2 from "./../../assets/car-repair-2560-x-1589-wallpaper-vuryoc2c99rlauhk.webp";
-import image3 from "./../../assets/car-repair-4896-x-3264-wallpaper-hvtv7r69s1uo6g29.webp";
-
-const images = [image1, image2, image3];
-
+import "./styles.css"
 const Carrossel: React.FC = (): JSX.Element => {
-  const settings: Settings = {
-    dots: false,
-    infinite: true,
-    speed: 1500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: "0px",
-    autoplay: true,
-    autoplaySpeed: 1500,
-    arrows: true,
-    pauseOnHover: true,
-  };
+  const [showImage, setShowImage] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowImage((prevShowImage) => !prevShowImage);
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
-    <React.Fragment>
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index}>
-            <img style={{ width: "100vw", height: "100vh" }} src={image} alt="" />
-          </div>
-        ))}
-      </Slider>
-    </React.Fragment>
+    <div id="home" className="carrossel-container">
+      <span>
+        <img
+          className={`image ${showImage ? "show" : ""}`}
+          src={image1}
+          alt=""
+        />
+               
+      </span>
+      <img className={`image ${showImage ? "" : "show"}`} src={image2} alt="" />
+      <span></span>
+    </div>
   );
 };
 
