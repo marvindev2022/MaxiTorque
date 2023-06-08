@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Footer from "../components/Footer/footer";
 import Header from "../components/Header/Header";
 import Carrossel from "../components/slick/slick";
@@ -24,9 +24,9 @@ function Main(): JSX.Element {
         <section id="services" className="section">
           <Services />
         </section>
-        <div className="mini-section">
+         <section className="section">
           <Slick />
-        </div>
+        </section> 
         <section id="gallery" className="section"></section>
         <section id="contact" className="section">
           <Contact />

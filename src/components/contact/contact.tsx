@@ -36,7 +36,8 @@ function Contact() {
   return (
     <div className="container-contact">
       <h1>Entre em contato </h1>
-      <section className="section-data-contact" style={{ display: "flex" }}>
+      <h2>Nosso contatpo</h2>
+      <div className="section-data-contact" style={{ display: "flex" }}>
         <div style={{ display: "flex" }} className="container-span-contact">
           <img className="img-contact" src={localization} alt="localização" />
           <span>
@@ -58,11 +59,11 @@ function Contact() {
             <p>maxitorque1@gmail.com</p>
           </span>
         </div>
-      </section>
+      </div>
       <div className="container-form">
         <form onSubmit={handleSubmit}>
          
-          <section className="container-input">
+          <div className="container-input">
             <label>
               <input
                 className="input-500px"
@@ -81,9 +82,9 @@ function Contact() {
                 placeholder="E-mail*"
               />
             </label>
-          </section>
+          </div>
 
-          <section>
+          <div>
             <label>
               <input
                 className="input-1030"
@@ -93,8 +94,8 @@ function Contact() {
                 placeholder="Assunto"
               />
             </label>
-          </section>
-          <section>
+          </div>
+          <div>
             <label>
               <textarea
                 name="commit"
@@ -103,7 +104,7 @@ function Contact() {
               />
               Por favor escreva sua menssagem
             </label>
-          </section>
+          </div>
           <button type="submit">Enviar</button>
         </form>
       </div>

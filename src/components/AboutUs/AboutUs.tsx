@@ -4,7 +4,7 @@ function AboutUs() {
   return (
     <div className="container-about-us">
       <article>
-      <h1>Desde 1990</h1>
+        <h1 className="red-text">Desde 1990</h1>
         <h2>Sobre Nós</h2>
         <p>
           Com muito orgulho, apresentamos a Maxitorque Diesel, a empresa líder

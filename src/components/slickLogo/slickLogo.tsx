@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Slider, { Settings } from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -20,10 +20,19 @@ const images = [
   kia,
   hyundai,
   mercedes,
+  renault,
+  fiat,
+  kia,
+  hyundai,
+  mercedes,
+  renault,
+  fiat,
+  kia,
+  hyundai,
+  mercedes,
 ];
 
 const Slick: React.FC = (): JSX.Element | null => {
-  const [shouldRender, setShouldRender] = useState(true);
 
   const settings: Settings = {
     dots: false,
@@ -34,15 +43,10 @@ const Slick: React.FC = (): JSX.Element | null => {
     centerMode: true,
     centerPadding: "0px",
     autoplay: true,
-    autoplaySpeed: 3000, // Defina o valor adequado para o tempo de exibição de cada slide em milissegundos
+    autoplaySpeed: 1, // Defina o valor adequado para o tempo de exibição de cada slide em milissegundos
     arrows: true,
     pauseOnHover: false,
   };
-
-  const handleUnslick = () => {
-    setShouldRender(false);
-  };
-
 
 
   return (
