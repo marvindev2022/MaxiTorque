@@ -9,9 +9,9 @@ import "./styles.css";
 
 function Services() {
   return (
-    <section className="container-services">
-      <h1 className="title"> Nós oferecemos os melhores serviços de reparo. </h1>
-      <h4>Nossos serviços</h4>
+    <section id='services' className="container-services">
+      <h6 className="title"> Oferecemos os melhores serviços de reparo. </h6>
+      <h4 className="subtitle">Nossos serviços</h4>
       <div className="container-cards">
         <div className="card">
           <img src={oiel} alt="Troca de Óleo" />

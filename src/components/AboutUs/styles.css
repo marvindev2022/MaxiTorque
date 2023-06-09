@@ -1,33 +1,53 @@
 .container-about-us {
   position: relative;
-  border: 2px solid red;
+  max-width: 100vw;
 }
 
 article {
-  padding: 50px;
-  width: 1020px;
+  max-width: 1120px;
+  height: 100vh;
+}
+
+.article-animation {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .red-text {
   color: #c00113;
   font-size: xx-large;
   font-weight: 900;
-  text-shadow: 2px 2px 9px rgba(0, 0, 0, 0.856);
 }
+
 .description-about {
-  font-size: 26px;
-  height: 400px;
+  padding-top: 10px;
+  font-size: 2rem;
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+  max-height: 600px;
   overflow: auto;
+  padding-right: 20px;
 }
+
 .container-background {
   position: relative;
   z-index: 2;
-  background-image: url(./../../assets/kisspng-van-fiat-ducato-fiat-automobiles-fiat-strada-2017-fiat-500-abarth-5b1c02751300f1.4264419515285622930779.png);
   background-repeat: no-repeat;
   padding: 20px;
-  background-position: 1120px 420px;
-
-  height: 100%;
+  background-position: 1120px 480px;
 }
 
 .container-background::before {
@@ -36,19 +56,112 @@ article {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 100px);
-
+  height: 100vh;
   transform-origin: top left;
-  transform: skewY(-24deg);
-  background-color: rgb(255, 255, 255);
+  transform: skewY(-28deg);
+  background-color: rgb(247, 242, 242);
   z-index: -1;
 }
 
-.container-img-ducato {
+@media screen and (max-height: 894px) and (min-width: 1518px) {
+  .container-background::before {
+    transform: skewY(-17deg);
+    background-color: rgb(247, 242, 242);
+    z-index: -1;
+  }
+  .container-img-ducato {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-position: 2.025rem 12.875rem;
+    background-image: url(./../../assets/kisspng-van-fiat-ducato-fiat-automobiles-fiat-strada-2017-fiat-500-abarth-5b1c02751300f1.4264419515285622930779.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    z-index: 999999;
+  }
+
+  .container-background {
+    padding: 50px;
+  }
+  .apocalipse {
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 1024px) and (min-height: 895px) {
+  article {
+  padding: 50px;
+
+  }
+  .container-img-ducato {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-image: url(./../../assets/kisspng-van-fiat-ducato-fiat-automobiles-fiat-strada-2017-fiat-500-abarth-5b1c02751300f1.4264419515285622930779.png);
+    background-size: 50%;
+    background-position: 2.025rem 37.875rem;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}
+@media screen and (min-width: 1024px) and (min-height: 895px) {
+  article {
+  padding: 100px 0 50px 100px;
+
+  }
+  .container-img-ducato {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-image: url(./../../assets/kisspng-van-fiat-ducato-fiat-automobiles-fiat-strada-2017-fiat-500-abarth-5b1c02751300f1.4264419515285622930779.png);
+    background-size: 50%;
+    background-position: 4.025rem 27.875rem;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}
+@media screen and (min-width: 1789px) and (min-height: 895px) {
+  article {
+  padding: 100px 0 50px 200px;
+
+  }
+  .container-img-ducato {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-image: url(./../../assets/kisspng-van-fiat-ducato-fiat-automobiles-fiat-strada-2017-fiat-500-abarth-5b1c02751300f1.4264419515285622930779.png);
+    background-size: 50%;
+    background-position: 2vw 34vh;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+  }
+}
+.apocalipse {
+  color: #000000;
+  z-index: -1;
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.apocalipse:first-letter {
+  color: #c00113;
+}
+
+.transversal-line {
   position: absolute;
+  left: 0;
   top: 0;
-  right: 0;
-  width: 80%;
-  height: 100%;
-  background-size: cover;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  transform-origin: top left;
+  transform: skewY(-50deg);
 }

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import "./styles.css"
 
 function Footer(){
@@ -6,10 +5,10 @@ function Footer(){
 
   return (
     <footer>
-      <p>
-        Site desenvolvido com amor por{" "}
-        <Link to="/www.linkedin/marcus-roza">Marcus Roza</Link>
-      </p>
+      <h1 className="h1-footer">
+        Desenvolvido por Marcus Roza
+      </h1>
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt=""/>
     </footer>
   );
 }

@@ -1,20 +1,42 @@
 .container-contact {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  min-width: 1220px;
-  background: white;
+  min-width: 100%;
+  background-color: whitesmoke;
   gap: 50px;
   padding: 50px;
   margin-top: 50px;
+  background-image: url(./../../assets/logos/f8d55ce459b7df385a82f5a5dc9a575b.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: start;
+  position: relative;
 }
+.container-main-contact {
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.733);
+}
+.container-contact h1 {
+  color: #a70000;
+  font-size: 58px;
+  font-family: "Josefin", sans-serif;
+}
+.container-contact h3 {
+  font-size: 48px;
+  font-family: "Josefin", sans-serif;
+}
+
 .section-data-contact {
   width: 100%;
+  max-width: 1200px;
   gap: 50px;
   padding: 20px;
   font-size: 16px;
   justify-content: space-between;
+  padding-top: 50px;
 }
 .img-contact {
   max-width: 42px;
@@ -28,21 +50,31 @@
 }
 .h2 {
   color: #a70000;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 800;
+  text-align: start;
+}
+span p {
+  font-size: 22px;
+  font-family: "Josefin", sans-serif;
+  letter-spacing: 0.8px;
 }
 .container-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: white;
   gap: 50px;
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .container-input {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 label {
   display: flex;
@@ -53,6 +85,9 @@ input {
   border-radius: 1%;
   padding-left: 20px;
 }
+input::placeholder {
+  font-size: 22px;
+}
 .input-500px {
   width: 501px;
 }
@@ -60,9 +95,190 @@ input {
 .input-1030px {
   width: 1030px;
 }
+.phone-p {
+  text-align: start;
+}
+.email-p {
+  text-align: start;
+}
 textarea {
   width: 1030px;
   height: 120px;
   resize: none;
   border-radius: 1%;
+}
+textarea::placeholder {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 22px;
+}
+form button {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  height: 50px;
+  background-color: #a70000;
+  color: white;
+  font-size: 28px;
+  font-family: "Josefin", sans-serif;
+  margin: 0 auto;
+}
+@media (max-width: 1120px) {
+  .section-data-contact {
+    max-width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 1rem;
+    padding-top: 3rem;
+  }
+
+  .img-contact {
+    max-width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+
+  .img-email {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  span p {
+    font-size: 1.4rem;
+  }
+
+  .container-form {
+    gap: 2rem;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  .container-input {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input-500px {
+    width: 50%;
+  }
+
+  .input-1030px {
+    width: 100%;
+  }
+
+  .phone-p,
+  .email-p {
+    text-align: center;
+  }
+
+  textarea {
+    width: 80vw;
+    height: 8rem;
+  }
+
+  textarea::placeholder {
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  form button {
+    max-width: 20rem;
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .container-contact {
+       max-width: 550px;
+
+
+    display: flex;
+    position: relative;
+  }
+  .container-main-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 590px;
+  }
+  .section-data-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+
+  }
+
+  .img-contact {
+    max-width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+  }
+
+  .img-email {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .h2 {
+    font-size: 2rem;
+  }
+
+  span p {
+    font-size: 1.4rem;
+  }
+
+  .container-form {
+    gap: 2rem;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  .container-input {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input-500px {
+    width: 50%;
+    max-width: 550px;
+
+  }
+
+  .input-1030px {
+    width: 100%;
+    max-width: 550px;
+
+  }
+
+  .phone-p,
+  .email-p {
+    text-align: center;
+  }
+
+  textarea {
+    width: 80vw;
+    height: 8rem;
+    
+  }
+
+  textarea::placeholder {
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  form button {
+    max-width: 20rem;
+    font-size: 2.4rem;
+  }
 }

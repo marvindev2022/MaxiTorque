@@ -1,42 +1,77 @@
+import { useEffect, useRef } from "react";
 import "./styles.css";
 
 function AboutUs() {
+  const articleRef = useRef(null);
+  const imageRef = useRef(null);
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, 
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("article-animation"); 
+        } else {
+          entry.target.classList.remove("article-animation"); 
+        }
+      });
+    }, options);
+
+    if (articleRef.current) {
+      observer.observe(articleRef.current); 
+    }
+
+    const observerImage = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove("espelhar-imagem"); 
+        } else {
+          entry.target.classList.add("espelhar-imagem");  
+        }
+      });
+    }, options);
+
+    if (imageRef.current) {
+      observerImage.observe(imageRef.current); 
+    }
+
+    return () => {
+      if (imageRef.current) {
+        observerImage.unobserve(imageRef.current);
+      }
+      if (articleRef.current) {
+        observer.unobserve(articleRef.current);
+      }
+    };
+  }, []);
+
   return (
     <section id="about-us" className="container-about-us">
       <div className="container-background">
-        <article>
+        <article ref={articleRef}>
           <h1 className="red-text">Desde 1990</h1>
           <p className="description-about">
-            Com muito orgulho, apresentamos a Maxitorque Diesel, a empresa líder
-            incontestável no ramo de
-            manutenção automotiva, sendo especializada em reparação de motores diesel e câmbios manuais.
-            Ao longo dos últimos trinta e cinco anos, nossa equipe excepcional da Super
-            Maxitorque Diesel tem se destacado nesse setor, desenvolvendo
-            protocolos e metodologias de referência mundialmente reconhecidos.
-            Nossa busca incessante pela excelência na formação e aperfeiçoamento
-            de profissionais é o pilar inabalável que sustenta nossa missão.
-            Valorizamos profundamente o bem-estar de nossos parceiros e
-            investimos em um time dedicado de especialistas que trabalham
-            incansavelmente para superar todos os desafios que surgem no dia a
-            dia. Nosso compromisso é simplificar a vida de nossos clientes e
-            colaboradores, oferecendo serviços de qualidade impecável. Na Super
-            Maxitorque Diesel, não somos apenas uma equipe, somos uma verdadeira
-            família. Cada funcionário é tratado com respeito, apreço e um
-            genuíno espírito fraternal, proporcionando um ambiente de trabalho
-            acolhedor e altamente motivador. Nossa dedicação em alcançar a plena
-            satisfação dos clientes é inabalável e é graças a eles que nos
-            tornamos referência absoluta no mercado automotivo. Expressamos
-            nossa profunda gratidão a todos os nossos parceiros e clientes, pois
-            é graças a vocês que a Super Maxitorque Diesel se destaca como a
-            indiscutível líder em manutenção automotiva. Continuaremos
-            aprimorando nossos serviços, constantemente superando expectativas,
-            sempre com a paixão e o compromisso inabaláveis que nos definem.
-            Juntos, seguiremos construindo um futuro brilhante e repleto de
-            sucesso. Podem contar conosco, sempre!
+            A Maxitorque Diesel é líder em manutenção automotiva, especializada
+            em reparação de motores diesel e câmbios manuais. Nossa equipe
+            excepcional desenvolve protocolos e metodologias de referência
+            mundial. Valorizamos a formação e aperfeiçoamento de profissionais,
+            buscando constantemente a excelência. Simplificamos a vida de nossos
+            clientes com serviços impecáveis. Na Maxitorque Diesel, somos uma
+            família dedicada, tratando cada funcionário com respeito. Nossa
+            dedicação à satisfação dos clientes nos torna referência no mercado
+            automotivo. Agradecemos aos parceiros e clientes por nos destacarem.
+            Continuaremos aprimorando nossos serviços, superando expectativas
+            com paixão e compromisso. Juntos, construiremos um futuro brilhante
+            e de sucesso. Podem contar conosco, sempre!
           </p>
+          <h2 className="apocalipse">Apocalipse 3:10</h2>
         </article>
       </div>
-      <div className="container-img-ducato"/>
+      <div ref={imageRef} className="container-img-ducato espelhar-imagem" />
     </section>
   );
 }

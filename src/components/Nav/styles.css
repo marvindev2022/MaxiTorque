@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 ul {
   display: flex;
@@ -16,7 +15,7 @@ ul {
 }
 
 .menu-icon {
-  color: #ffffff;
+  color: #000;
   font-size: 25px;
   cursor: pointer;
   display: none;
@@ -41,31 +40,29 @@ a {
   color: #ffffff;
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 25px;
-  letter-spacing: 0.5px;
+  font-size: 30px;
+  letter-spacing: 1.5px;
   padding-right: 0;
   padding-left: 15px;
-  font-family: "Anton", sans-serif;
+  font-family: "Josefin",  sans-serif; 
 }
+
 .home {
   color: #c00113;
   transition: background-color 0.5s ease;
 }
-a{
-  letter-spacing: 1.5px;
 
+li:hover {
+  transform: scale(1.05);
 }
-a:hover {
-   box-shadow: 0px 5px 30px 0px rgba(4, 0, 0, 0.952);
-  -webkit-box-shadow: 0px 5px 30px 0px #c00113;
-}
+
 .contact {
   background: #c00113;
-    border-radius: 2px;
-    padding-right: 15px !important;
-    color: #fff !important;
-
+  border-radius: 2px;
+  padding-right: 15px !important;
+  color: #fff !important;
 }
+
 @media (max-width: 768px) {
   .nav-links li {
     display: none;
@@ -83,4 +80,14 @@ a:hover {
   .nav-links li {
     display: block;
   }
+}
+
+.container-X {
+  display: inline-block;
+  transition: transform 1s;
+  vertical-align: middle;
+}
+
+.container-X:hover {
+  transform: rotate(360deg);
 }
