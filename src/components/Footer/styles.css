@@ -1,11 +1,26 @@
-footer {
-  display:flex;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.403);
-  font-family: "Josefin" , sans-serif;
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  font-family: "Josefin", sans-serif;
   font-variant: small-caps;
-  justify-content: space-around;
-  padding: 100px;
+  padding: 50px;
+  margin: 0 auto;
+
+  color: white;
+
+  background-image: url(./../../assets//logos/footer.jpg);
+  background-size: cover;
+  background-position: 0%;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap:50px
+}
+span p{
+  color:#c00113
 }
 footer img {
   width: 100px;

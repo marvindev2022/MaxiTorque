@@ -64,7 +64,7 @@ article {
 @media screen and (max-height: 894px) and (min-width: 1518px) {
   .container-background::before {
     transform: skewY(-17deg);
-    background-color: rgb(247, 242, 242);
+    background-color: rgb(255, 255, 255);
     z-index: -1;
   }
   .container-img-ducato {
@@ -127,6 +127,10 @@ article {
 @media screen and (min-width: 1789px) and (min-height: 895px) {
   article {
   padding: 100px 0 50px 200px;
+
+  }
+  .description-about{
+  text-align: justify
 
   }
   .container-img-ducato {
