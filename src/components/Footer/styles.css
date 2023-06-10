@@ -5,7 +5,7 @@ footer {
   font-family: "Josefin" , sans-serif;
   font-variant: small-caps;
   justify-content: space-around;
-  align-items: center;
+  padding: 100px;
 }
 footer img {
   width: 100px;

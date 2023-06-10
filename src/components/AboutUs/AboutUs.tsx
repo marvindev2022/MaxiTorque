@@ -8,35 +8,35 @@ function AboutUs() {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5, 
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("article-animation"); 
+          entry.target.classList.add("article-animation");
         } else {
-          entry.target.classList.remove("article-animation"); 
+          entry.target.classList.remove("article-animation");
         }
       });
     }, options);
 
     if (articleRef.current) {
-      observer.observe(articleRef.current); 
+      observer.observe(articleRef.current);
     }
 
     const observerImage = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.remove("espelhar-imagem"); 
+          entry.target.classList.remove("espelhar-imagem");
         } else {
-          entry.target.classList.add("espelhar-imagem");  
+          entry.target.classList.add("espelhar-imagem");
         }
       });
     }, options);
 
     if (imageRef.current) {
-      observerImage.observe(imageRef.current); 
+      observerImage.observe(imageRef.current);
     }
 
     return () => {
@@ -68,7 +68,6 @@ function AboutUs() {
             com paixão e compromisso. Juntos, construiremos um futuro brilhante
             e de sucesso. Podem contar conosco, sempre!
           </p>
-          <h2 className="apocalipse">Apocalipse 3:10</h2>
         </article>
       </div>
       <div ref={imageRef} className="container-img-ducato espelhar-imagem" />

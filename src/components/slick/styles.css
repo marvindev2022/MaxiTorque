@@ -6,7 +6,8 @@
   overflow: hidden;
 }
 
-.image {
+.truck ,
+.motor ,.cabeçote {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -22,8 +23,6 @@
   font-weight: bold;
 }
 
-
-
 .slick-dots li button {
   display: block;
   width: 10px;
@@ -37,4 +36,13 @@
 
 .slick-dots li button.active {
   background-color: #ff0000;
+}
+@media screen and (max-width: 1000px) {
+  .truck {
+    object-fit: cover;
+  }
+
+  .motor {
+    object-fit: cover;
+  }
 }

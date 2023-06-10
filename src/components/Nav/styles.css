@@ -49,9 +49,12 @@ a {
 
 .home {
   color: #c00113;
-  transition: background-color 0.5s ease;
+  
 }
-
+li{
+  height: 50px;
+  padding: 10px;
+}
 li:hover {
   transform: scale(1.05);
 }
@@ -59,8 +62,8 @@ li:hover {
 .contact {
   background: #c00113;
   border-radius: 2px;
-  padding-right: 15px !important;
-  color: #fff !important;
+  padding-right: 15px ;
+  color: #fff ;
 }
 
 @media (max-width: 768px) {

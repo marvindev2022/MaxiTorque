@@ -19,13 +19,9 @@ function Nav(): JSX.Element {
             Serviços
           </a>
         </li>
-        <li className="nav-item">
-          <a href="#gallery" className="nav-link">
-            Galeria
-          </a>
-        </li>
-        <li className="nav-item ">
-          <a href="#contact" className="nav-link contact">
+        
+        <li className="nav-item  contact">
+          <a href="#contact" className="nav-link">
             Contato
           </a>
         </li>

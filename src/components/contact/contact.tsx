@@ -3,6 +3,7 @@ import call from "./../../assets/call.png";
 import mail from "./../../assets/mail.png";
 import "./styles.css";
 import { useState } from "react";
+import { notifyError, notifySuccess } from "../../util/notify";
 
 interface DefaultForm {
   name: string;
@@ -22,6 +23,16 @@ function Contact() {
   const [formState, setFormState] = useState<DefaultForm>(defaultForm);
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    if (
+      !formState.name ||
+      !formState.email ||
+      !formState.description ||
+      !formState.commit
+    ) {
+      return notifyError("Preencha todos os campos!");
+    }
+    setFormState(defaultForm);
+    return notifySuccess("Mensagem Enviada");
   }
 
   function handleChange(
@@ -37,7 +48,6 @@ function Contact() {
     <section id="contact" className="container-contact">
       <div className="container-main-contact">
         <h1>Entre em contato </h1>
-        <h3>Nosso contato</h3>
         <div className="section-data-contact" style={{ display: "flex" }}>
           <div style={{ display: "flex" }} className="container-span-contact">
             <img className="img-contact" src={localization} alt="localização" />

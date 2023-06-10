@@ -6,7 +6,6 @@ import Contact from "../components/contact/contact";
 import "./styles.css";
 import Services from "../components/Services/Services";
 import AboutUs from "../components/AboutUs/AboutUs";
-import Slick from "../components/slickLogo/slickLogo";
 
 function Main(): JSX.Element {
   return (
