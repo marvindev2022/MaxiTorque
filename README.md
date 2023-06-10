@@ -23,27 +23,31 @@ Navegador da web moderno
 - ![Safari](https://img.shields.io/badge/Safari-%23000000.svg?style=for-the-badge&logo=safari&logoColor=white)
 
 ### Como executar o projeto
+Clone o repositório para o seu ambiente local:
 
-1. Clone o repositório para o seu ambiente local:<https://github.com/marvindev2022/MaxiTorque>
 
+```
+git clone <git@github.com>:marvindev2022/MaxiTorque.git
+```
 
-git clone <<git@github.com>:marvindev2022/MaxiTorque.git>
 Navegue até o diretório do projeto:
 
+```
+cd MaxiTorque
+```
 
-cd nome-do-repositorio
-Abra o arquivo index.html em um navegador da web com o comando.
+No terminal, instale as dependências do projeto:
 
-No terminal
 ```
 npm install
 ```
-Depois
 
-No terminal
+Abra o arquivo index.html em um navegador da web.
+
+Em seguida, execute o seguinte comando no terminal:
+
 ```
 npm run dev
-
 ```
 
 ## Personalização
