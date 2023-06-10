@@ -4,24 +4,27 @@ Esta é uma **land page** para uma oficina mecânica. Ela fornece informações 
 
 ## Funcionalidades
 
-**Navegação manual:** Os usuários podem rolar manualmente pela página para visualizar as diferentes seções.
-Navegação pela nav bar: Os usuários podem usar a navegação na barra de navegação no header para ir diretamente para uma seção específica.
+- **Navegação manual:** Os usuários podem rolar manualmente pela página para visualizar as diferentes seções.
 
-**Seções separadas:** O site é dividido em várias seções, cada uma fornecendo informações específicas sobre a empresa, serviços oferecidos, depoimentos de clientes, etc.
+- **Navegação pela nav bar:** Os usuários podem usar a navegação na barra de navegação no header para ir diretamente para uma seção específica.
 
-**Formulário de contato:** Existe um formulário de contato onde os usuários podem enviar mensagens para a empresa. Os campos típicos de um formulário de contato incluem nome, e-mail, assunto e mensagem.
+- **Seções separadas:** O site é dividido em várias seções, cada uma fornecendo informações específicas sobre a empresa, serviços oferecidos, depoimentos de clientes, etc.
+
+- **Formulário de contato:** Existe um formulário de contato onde os usuários podem enviar mensagens para a empresa. Os campos típicos de um formulário de contato incluem nome, e-mail, assunto e mensagem.
 
 ### Pré-requisitos
 
 Navegador da web moderno
-![Google Chrome](https://img.shields.io/badge/Chrome-%234285F4.svg?style=for-the-badge&logo=google-chrome&logoColor=white)
-![Mozilla Firefox](https://img.shields.io/badge/Firefox-%23FF7139.svg?style=for-the-badge&logo=mozilla-firefox&logoColor=white)
-![Microsoft Edge](https://img.shields.io/badge/Edge-%230078D7.svg?style=for-the-badge&logo=microsoft-edge&logoColor=white)
-![Brave Browser](https://img.shields.io/badge/Brave-%23FB542B.svg?style=for-the-badge&logo=brave&logoColor=white)
-![Safari](https://img.shields.io/badge/Safari-%23000000.svg?style=for-the-badge&logo=safari&logoColor=white)
 
-### Como executar o projeto 
-Clone o repositório para o seu ambiente local: <https://github.com/marvindev2022/MaxiTorque>
+- ![Google Chrome](https://img.shields.io/badge/Chrome-%234285F4.svg?style=for-the-badge&logo=google-chrome&logoColor=white)
+- ![Mozilla Firefox](https://img.shields.io/badge/Firefox-%23FF7139.svg?style=for-the-badge&logo=mozilla-firefox&logoColor=white)
+- ![Microsoft Edge](https://img.shields.io/badge/Edge-%230078D7.svg?style=for-the-badge&logo=microsoft-edge&logoColor=white)
+- ![Brave Browser](https://img.shields.io/badge/Brave-%23FB542B.svg?style=for-the-badge&logo=brave&logoColor=white)
+- ![Safari](https://img.shields.io/badge/Safari-%23000000.svg?style=for-the-badge&logo=safari&logoColor=white)
+
+### Como executar o projeto
+
+1. Clone o repositório para o seu ambiente local:<https://github.com/marvindev2022/MaxiTorque>
 
 
 git clone <<git@github.com>:marvindev2022/MaxiTorque.git>
