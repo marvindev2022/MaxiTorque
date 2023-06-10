@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
 import Nav from "../Nav/Nav";
 import car from "./../../assets/logos/logoCar.png";
-import menu from "./../../assets/logos/menu.png";
 import "./styles.css";
 
 function Header(): JSX.Element {
